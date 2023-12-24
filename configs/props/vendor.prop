@@ -325,3 +325,13 @@ vendor.connsys.driver.ready=no
 ro.telephony.iwlan_operation_mode=AP-assisted
 ro.vendor.ap_info_monitor=0
 ro.vendor.wifi.sap.concurrent.iface=ap1
+
+#Scrolling Optimizations
+ro.max.fling_velocity=12000
+ro.min.fling_velocity=4000
+vendor.display.use_smooth_motion=1
+ro.hwui.render_ahead=1
+media.stagefright.thumbnail.prefer_hw_codecs=true
+mm.enable.smoothstreaming=true
+persist.sys.scrollingcache=2
+
