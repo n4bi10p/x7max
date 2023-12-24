@@ -586,4 +586,12 @@
 
     <!-- Defines the sysfs attribute path used by the device to enable/disable DC dimming. -->
     <string name="config_deviceDcDimmingSysfsNode">/sys/kernel/oplus_display/dimlayer_bl_en</string>
+    
+    <!-- Flag indicating whether the surface flinger is inefficient
+         at performing a blur.  Used by parts of the UI to turn off
+         the blur effect where it isn't worth the performance hit.
+         As of Honeycomb, blurring is not supported anymore. -->
+    <bool name="config_sf_slowBlur">false</bool>
+    <bool name="config_ui_enableFadingMarquee">true</bool>
+
 </resources>
