@@ -21,20 +21,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/realme/RMX3031/device.mk)
 
-# Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common evolution stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
-# Official-ify
-ELIXIR_BUILD_TYPE := OFFICIAL
+#EvoX Flags 
 IS_PHONE := true
-CUSTOM_BUILD_TYPE := OFFICIAL
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_CALL_RECORDING := true
 EXTRA_UDFPS_ANIMATIONS := true
-TARGET_REMOVE_APERTURE_CAM := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_PICO_GAPPS := true
+TARGET_ENABLE_BLUR := true
+TARGET_BUILD_APERTURE_CAMERA := false
+TARGET_SUPPORTS_TOUCHGESTURES := true
+TARGET_SUPPORTS_QUICK_TAP := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_RMX3031
+PRODUCT_NAME := evolution_RMX3031
 PRODUCT_DEVICE := RMX3031
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := Realme X7 Max 5G
