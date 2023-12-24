@@ -476,11 +476,13 @@
     <!-- Not allow to switch to higher refresh rate when (display, ambient) brightness falls into
          the region defined by the two arrays -->
     <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
-        <item>-1</item>
+        <item>35</item>
     </integer-array>
     <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
-        <item>-1</item>
+        <item>10</item>
     </integer-array>
+ 
+    <integer name="config_defaultRefreshRateInZone">120</integer>
 
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,
