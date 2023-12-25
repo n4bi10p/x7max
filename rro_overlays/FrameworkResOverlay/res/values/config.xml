@@ -479,7 +479,7 @@
         <item>35</item>
     </integer-array>
     <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
-        <item>10</item>
+        <item>30</item>
     </integer-array>
  
     <integer name="config_defaultRefreshRateInZone">120</integer>
