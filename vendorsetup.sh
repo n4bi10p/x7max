@@ -16,10 +16,10 @@ if [ -n "${CLEAN_DT_REPOS}" ]; then
 fi
 echo start cloning repos
 VT=vendor/realme/RMX3031/RMX3031-vendor.mk
-if ! [ -a $VT ]; then git clone https://github.com/nishant6342/vendor_realme_RMX3031 -b RMUI4-OSS vendor/realme/RMX3031
+if ! [ -a $VT ]; then git clone --depth=1  https://github.com/subhagamer/vendor_realme_RMX3031 -b RMUI4-OSS vendor/realme/RMX3031
 fi
 KT=kernel/realme/RMX3031/Makefile
-if ! [ -a $KT ]; then git clone --depth=1 https://github.com/nishant6342/kernel_realme_RMX3031 -b T kernel/realme/RMX3031
+if ! [ -a $KT ]; then git clone --depth=1 https://github.com/subhagamer/kernel_realme_RMX3031 -b T kernel/realme/RMX3031
 fi
 PA=packages/apps/prebuilt-apps/prebuilt-apps.mk
 if ! [ -a $PA ]; then git clone --depth=1 https://gitlab.com/nishant6342/packages_apps_prebuilt-apps packages/apps/prebuilt-apps/
